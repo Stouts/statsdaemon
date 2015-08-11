@@ -6,7 +6,7 @@ Stouts.statsdaemon
 
 Ansible role which help you with:
 
-* Install and setup [statsdaemon](https://github.com/etsy/statsdaemon/)
+* Install and setup [statsdaemon](https://github.com/bitly/statsdaemon)
 
 #### Variables
 
