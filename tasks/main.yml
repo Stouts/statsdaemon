@@ -1,0 +1,5 @@
+---
+
+- include: statsdaemon.yml
+  when: statsdaemon_enabled
+  tags: [statsdaemon]
