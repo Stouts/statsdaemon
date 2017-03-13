@@ -3,6 +3,7 @@
 statsdaemon_enabled: yes                # enable the role
 statsdaemon_version: 0.7.1
 statsdaemon_home: /opt/statsdaemon      # where to install
+statsdaemon_service: systemd            # systemd|upstart
 
 statsdaemon_address: ":8125"            # listen UDP
 statsdaemon_tcpaddr: ""                 # listen TCP

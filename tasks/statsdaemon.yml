@@ -17,6 +17,12 @@
 
 - name: Setup statsdaemon service
   template: src=upstart.conf.j2 dest=/etc/init/statsdaemon.conf
+  when: statsdaemon_service == 'upstart'
+  notify: statsdaemon restart
+
+- name: Setup statsdaemon service
+  template: src=systemd.conf.j2 dest=/etc/systemd/system/statsdaemon.service
+  when: statsdaemon_service == 'systemd'
   notify: statsdaemon restart
 
 - name: Ensure that Statsdaemon is started
